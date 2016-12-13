@@ -1,5 +1,6 @@
 
 img{height:500px;
+    image-orientation: center;
     padding-left: 23px;
     margin-top: 1px;
     padding-top: 1px;
@@ -7,15 +8,23 @@ img{height:500px;
 }
 
 h1 {color: rgb(225,167,105);
-    font-family: sans-serif;
+
     font-weight: lighter;
     font-kerning: 5px;
     padding-left: 10px;
+    font-size: 20px;
 }
 
-h2 {text-align: center;
+
+h2 {color: rgb(225,167,105);
+    font-weight: bold
+    font-family: sans-serif;, serif;
+    text-align: center;
     font-size: 60px;
-    font-weight: bold;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 p {font-family: times;
@@ -23,4 +32,33 @@ p {font-family: times;
    font-size: 17px;
    padding-right: 10px;
    margin-bottom: 1px;
+}
+
+
+
+.hero-container { background-color: white; }
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: url(https://si.wsj.net/public/resources/images/BN-GG801_0108PL_J_20150105150624.jpg) no-repeat scroll 50% 50%;
+    background-size: 100%auto;;
+    max-height: 500px;
+}
+
+.hero .dummy {
+    padding-top: 57.5%;
+}
+
+/* MEDIA QUERIES - extend if needed */
+@media only screen and (min-width:768px) {
+    .hero .dummy { padding-top: 40%; }
+}
+
+@media only screen and (min-width:960px) {
+    .hero .dummy { padding-top: 33.333%; }
+}
+
+@media only screen and (min-width:1200px) {
+    .hero .dummy { padding-top: 25%; }
 }
